@@ -1,0 +1,553 @@
+.comments {
+  margin-bottom: 15px;
+  overflow: hidden;
+
+  .show-comments {
+    border: 1px solid #eeeeee;
+    background-color: #eeeeee;
+    border-radius: 6px;
+    cursor: pointer;
+
+    a {
+      display: block;
+      padding: 10px 0 10px 10px;
+      line-height: 25px;
+      font-weight: 600;
+      font-size: 20px;
+      color: #333;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .nospace {
+    font-size: 0;
+  }
+
+  .comments-header {
+
+    .hide-comments {
+      position: relative;
+      font-weight: 500;
+      font-size: 12px;
+      float: right;
+      margin: 0;
+      top: 8px;
+
+      a {
+        font-weight: 400;
+        font-size: 13px;
+        color: #777;
+
+        i {
+          font-weight: 400;
+          font-size: 10px;
+        }
+
+        &:hover {
+          text-decoration: none;
+          color: #333;
+        }
+      }
+    }
+
+    h2 {
+      padding-bottom: 10px;
+      margin: 2px 0 10px;
+      font-size: 20px;
+
+      small {
+        display: inline-block;
+        font-size: 16px;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .comments-input {
+    //margin: 0 0 15px 0;
+    margin: 0;
+
+    .disabled-form {
+      background-color: #eeeeee;
+      border-radius: 6px;
+      text-align: left;
+      font-size: 14px;
+      margin: 10px 0;
+      padding: 15px;
+      color: #555;
+    }
+
+    .comments-alert {
+      margin: 15px 0 30px 0;
+    }
+
+    .media-object {
+      height: 64px;
+      width: 64px;
+    }
+
+    .without-image {
+      background-color: #eeeeee;
+      color: #aaaaaa;
+      font-size: 22px;
+      line-height: 64px;
+      text-align: center;
+
+      &:before {
+        cursor: default;
+        content:"\e008";
+        font-family: Glyphicons Halflings;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+      }
+    }
+
+    .media-body {
+      font-size: 14px !important;
+
+      textarea {
+        resize:vertical;
+        height: 64px;
+      }
+
+      .media-buttons {
+        display: none;
+
+        .user-data {
+          word-break: break-all;
+          font-size: 14px;
+        }
+
+        button {
+          &:first-child {
+            margin: 0 5px 0 0;
+          }
+
+          padding: 5px 10px;
+          font-size: 12px;
+          line-height: 1.5;
+          border-radius: 3px;
+        }
+      }
+
+      .active-media-buttons {
+        display: block;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .comments-input {
+      //margin: 0 0 15px 0;
+      margin: 0;
+
+      .disabled-form {
+        font-size: 13px;
+      }
+
+      .comments-alert {
+        margin: 15px 0 15px 0;
+      }
+
+      .media-object {
+        height: 32px;
+        width: 32px;
+      }
+
+      .without-image {
+        background-color: #eeeeee;
+        color: #aaaaaa;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+
+        &:before {
+          cursor: default;
+          content:"\e008";
+          font-family: Glyphicons Halflings;
+          font-style: normal;
+          font-weight: normal;
+          text-decoration: inherit;
+        }
+      }
+
+      .media-body {
+        font-size: 11px !important;
+
+        textarea {
+          resize:vertical;
+          font-size: 13px;
+          height: 32px;
+        }
+
+        .media-buttons {
+          display: none;
+
+          .user-data {
+            word-break: break-all;
+            font-size: 11px;
+          }
+
+          button {
+            &:first-child {
+              margin: 0 5px 0 0;
+            }
+
+            padding: 1px 5px;
+            font-size: 12px;
+            line-height: 1.5;
+            border-radius: 3px;
+          }
+        }
+
+        .active-media-buttons {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .comments-input {
+      //margin: 0 0 15px 0;
+      margin: 0;
+
+      .comments-alert {
+        margin: 15px 0 30px 0;
+      }
+
+      .media-object {
+        height: 48px;
+        width: 48px;
+      }
+
+      .without-image {
+        background-color: #eeeeee;
+        color: #aaaaaa;
+        font-size: 20px;
+        line-height: 48px;
+        text-align: center;
+
+        &:before {
+          cursor: default;
+          content:"\e008";
+          font-family: Glyphicons Halflings;
+          font-style: normal;
+          font-weight: normal;
+          text-decoration: inherit;
+        }
+      }
+
+      .media-body {
+        font-size: 12px !important;
+
+        textarea {
+          resize:vertical;
+          height: 48px;
+        }
+
+        .media-buttons {
+          display: none;
+
+          .user-data {
+            word-break: break-all;
+            font-size: 12px;
+          }
+
+          button {
+            &:first-child {
+              margin: 0 5px 0 0;
+            }
+
+            padding: 5px 10px;
+            font-size: 12px;
+            line-height: 1.5;
+            border-radius: 3px;
+          }
+        }
+
+        .active-media-buttons {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .comments-list {
+
+    .media {
+      &:first-child {
+        margin-top: 15px;
+      }
+    }
+
+    .media-object {
+      height: 64px;
+      width: 64px;
+    }
+
+    .without-image {
+      background-color: #eeeeee;
+      color: #aaaaaa;
+      font-size: 22px;
+      line-height: 64px;
+      text-align: center;
+
+      &:before {
+        cursor: default;
+        content:"\e008";
+        font-family: Glyphicons Halflings;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+      }
+    }
+
+    .media-body {
+
+      h4 {
+        small {
+          position: relative;
+          font-weight: 500;
+          font-size: 12px;
+          color: #777;
+          margin: 0;
+        }
+      }
+
+      .comment-info {
+        margin: 5px 0 0 0;
+
+        .comment-reply {
+          display: inline-block;
+          margin: 0 10px 0 0;
+          font-size: 12px;
+        }
+
+        .comment-rating {
+          display: inline-block;
+
+          .thumbs-up {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 11px;
+            margin: 0 0 0 15px;
+            color: #777;
+          }
+
+          .score {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 11px;
+            color: #777777;
+            margin: 0;
+
+            .good {
+              color: #00540a;
+            }
+
+            .bad {
+              color: #c9302c;
+            }
+          }
+
+          .thumbs-down {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 11px;
+            margin: 0 0 0 15px;
+            color: #777;
+          }
+
+          .rated {
+            a {
+              color: #23527c;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .comments-list {
+
+      .media {
+        &:first-child {
+          margin-top: 15px;
+        }
+      }
+
+      .media-object {
+        height: 32px;
+        width: 32px;
+      }
+
+      .without-image {
+        background-color: #eeeeee;
+        color: #aaaaaa;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+
+        &:before {
+          cursor: default;
+          content:"\e008";
+          font-family: Glyphicons Halflings;
+          font-style: normal;
+          font-weight: normal;
+          text-decoration: inherit;
+        }
+      }
+
+      .media-body {
+        font-size: 13px;
+
+        h4 {
+          small {
+            position: relative;
+            font-weight: 500;
+            font-size: 10px;
+            color: #777;
+            margin: 0;
+          }
+        }
+
+        .media-heading {
+          font-size: 13px;
+        }
+
+        .comment-info {
+          margin: 5px 0 0 0;
+
+          .comment-reply {
+            display: inline-block;
+            margin: 0 10px 0 0;
+            font-size: 12px;
+          }
+
+          .comment-rating {
+            display: inline-block;;
+
+            .thumbs-up {
+              display: inline-block;
+              font-weight: 500;
+              font-size: 11px;
+              margin: 0 0 0 15px;
+              color: #777;
+            }
+
+            .score {
+              display: inline-block;
+              font-weight: 500;
+              font-size: 11px;
+              color: #777;
+              margin: 0;
+            }
+
+            .thumbs-down {
+              display: inline-block;
+              font-weight: 500;
+              font-size: 11px;
+              margin: 0 0 0 15px;
+              color: #777;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .comments-list {
+
+      .media {
+        &:first-child {
+          margin-top: 15px;
+        }
+      }
+
+      .media-object {
+        height: 48px;
+        width: 48px;
+      }
+
+      .without-image {
+        background-color: #eeeeee;
+        color: #aaaaaa;
+        font-size: 20px;
+        line-height: 48px;
+        text-align: center;
+
+        &:before {
+          cursor: default;
+          content:"\e008";
+          font-family: Glyphicons Halflings;
+          font-style: normal;
+          font-weight: normal;
+          text-decoration: inherit;
+        }
+      }
+
+      .media-body {
+        font-size: 14px;
+
+        h4 {
+          small {
+            position: relative;
+            font-weight: 500;
+            font-size: 11px;
+            color: #777;
+            margin: 0;
+          }
+        }
+
+        .media-heading {
+          font-size: 14px;
+        }
+
+        .comment-info {
+          margin: 5px 0 0 0;
+
+          .comment-reply {
+            display: inline-block;
+            margin: 0 10px 0 0;
+            font-size: 12px;
+          }
+
+          .comment-rating {
+            display: inline-block;;
+
+            .thumbs-up {
+              display: inline-block;
+              font-weight: 500;
+              font-size: 12px;
+              margin: 0 0 0 15px;
+              color: #777;
+            }
+
+            .score {
+              display: inline-block;
+              font-weight: 500;
+              font-size: 12px;
+              color: #777;
+              margin: 0;
+            }
+
+            .thumbs-down {
+              display: inline-block;
+              font-weight: 500;
+              font-size: 12px;
+              margin: 0 0 0 15px;
+              color: #777;
+            }
+          }
+        }
+      }
+    }
+  }
+}

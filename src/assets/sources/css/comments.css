@@ -1,0 +1,342 @@
+.comments {
+  margin-bottom: 15px;
+  overflow: hidden; }
+  .comments .show-comments {
+    border: 1px solid #eeeeee;
+    background-color: #eeeeee;
+    border-radius: 6px;
+    cursor: pointer; }
+    .comments .show-comments a {
+      display: block;
+      padding: 10px 0 10px 10px;
+      line-height: 25px;
+      font-weight: 600;
+      font-size: 20px;
+      color: #333; }
+      .comments .show-comments a:hover {
+        text-decoration: none; }
+  .comments .nospace {
+    font-size: 0; }
+  .comments .comments-header .hide-comments {
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    float: right;
+    margin: 0;
+    top: 8px; }
+    .comments .comments-header .hide-comments a {
+      font-weight: 400;
+      font-size: 13px;
+      color: #777; }
+      .comments .comments-header .hide-comments a i {
+        font-weight: 400;
+        font-size: 10px; }
+      .comments .comments-header .hide-comments a:hover {
+        text-decoration: none;
+        color: #333; }
+  .comments .comments-header h2 {
+    padding-bottom: 10px;
+    margin: 2px 0 10px;
+    font-size: 20px; }
+    .comments .comments-header h2 small {
+      display: inline-block;
+      font-size: 16px;
+      margin: 0 10px; }
+  .comments .comments-input {
+    margin: 0; }
+    .comments .comments-input .disabled-form {
+      background-color: #eeeeee;
+      border-radius: 6px;
+      text-align: left;
+      font-size: 14px;
+      margin: 10px 0;
+      padding: 15px;
+      color: #555; }
+    .comments .comments-input .comments-alert {
+      margin: 15px 0 30px 0; }
+    .comments .comments-input .media-object {
+      height: 64px;
+      width: 64px; }
+    .comments .comments-input .without-image {
+      background-color: #eeeeee;
+      color: #aaaaaa;
+      font-size: 22px;
+      line-height: 64px;
+      text-align: center; }
+      .comments .comments-input .without-image:before {
+        cursor: default;
+        content: "\e008";
+        font-family: Glyphicons Halflings;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit; }
+    .comments .comments-input .media-body {
+      font-size: 14px !important; }
+      .comments .comments-input .media-body textarea {
+        resize: vertical;
+        height: 64px; }
+      .comments .comments-input .media-body .media-buttons {
+        display: none; }
+        .comments .comments-input .media-body .media-buttons .user-data {
+          word-break: break-all;
+          font-size: 14px; }
+        .comments .comments-input .media-body .media-buttons button {
+          padding: 5px 10px;
+          font-size: 12px;
+          line-height: 1.5;
+          border-radius: 3px; }
+          .comments .comments-input .media-body .media-buttons button:first-child {
+            margin: 0 5px 0 0; }
+      .comments .comments-input .media-body .active-media-buttons {
+        display: block; }
+  @media (max-width: 767px) {
+    .comments .comments-input {
+      margin: 0; }
+      .comments .comments-input .disabled-form {
+        font-size: 13px; }
+      .comments .comments-input .comments-alert {
+        margin: 15px 0 15px 0; }
+      .comments .comments-input .media-object {
+        height: 32px;
+        width: 32px; }
+      .comments .comments-input .without-image {
+        background-color: #eeeeee;
+        color: #aaaaaa;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center; }
+        .comments .comments-input .without-image:before {
+          cursor: default;
+          content: "\e008";
+          font-family: Glyphicons Halflings;
+          font-style: normal;
+          font-weight: normal;
+          text-decoration: inherit; }
+      .comments .comments-input .media-body {
+        font-size: 11px !important; }
+        .comments .comments-input .media-body textarea {
+          resize: vertical;
+          font-size: 13px;
+          height: 32px; }
+        .comments .comments-input .media-body .media-buttons {
+          display: none; }
+          .comments .comments-input .media-body .media-buttons .user-data {
+            word-break: break-all;
+            font-size: 11px; }
+          .comments .comments-input .media-body .media-buttons button {
+            padding: 1px 5px;
+            font-size: 12px;
+            line-height: 1.5;
+            border-radius: 3px; }
+            .comments .comments-input .media-body .media-buttons button:first-child {
+              margin: 0 5px 0 0; }
+        .comments .comments-input .media-body .active-media-buttons {
+          display: block; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .comments .comments-input {
+      margin: 0; }
+      .comments .comments-input .comments-alert {
+        margin: 15px 0 30px 0; }
+      .comments .comments-input .media-object {
+        height: 48px;
+        width: 48px; }
+      .comments .comments-input .without-image {
+        background-color: #eeeeee;
+        color: #aaaaaa;
+        font-size: 20px;
+        line-height: 48px;
+        text-align: center; }
+        .comments .comments-input .without-image:before {
+          cursor: default;
+          content: "\e008";
+          font-family: Glyphicons Halflings;
+          font-style: normal;
+          font-weight: normal;
+          text-decoration: inherit; }
+      .comments .comments-input .media-body {
+        font-size: 12px !important; }
+        .comments .comments-input .media-body textarea {
+          resize: vertical;
+          height: 48px; }
+        .comments .comments-input .media-body .media-buttons {
+          display: none; }
+          .comments .comments-input .media-body .media-buttons .user-data {
+            word-break: break-all;
+            font-size: 12px; }
+          .comments .comments-input .media-body .media-buttons button {
+            padding: 5px 10px;
+            font-size: 12px;
+            line-height: 1.5;
+            border-radius: 3px; }
+            .comments .comments-input .media-body .media-buttons button:first-child {
+              margin: 0 5px 0 0; }
+        .comments .comments-input .media-body .active-media-buttons {
+          display: block; } }
+  .comments .comments-list .media:first-child {
+    margin-top: 15px; }
+  .comments .comments-list .media-object {
+    height: 64px;
+    width: 64px; }
+  .comments .comments-list .without-image {
+    background-color: #eeeeee;
+    color: #aaaaaa;
+    font-size: 22px;
+    line-height: 64px;
+    text-align: center; }
+    .comments .comments-list .without-image:before {
+      cursor: default;
+      content: "\e008";
+      font-family: Glyphicons Halflings;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit; }
+  .comments .comments-list .media-body h4 small {
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    color: #777;
+    margin: 0; }
+  .comments .comments-list .media-body .comment-info {
+    margin: 5px 0 0 0; }
+    .comments .comments-list .media-body .comment-info .comment-reply {
+      display: inline-block;
+      margin: 0 10px 0 0;
+      font-size: 12px; }
+    .comments .comments-list .media-body .comment-info .comment-rating {
+      display: inline-block; }
+      .comments .comments-list .media-body .comment-info .comment-rating .thumbs-up {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 11px;
+        margin: 0 0 0 15px;
+        color: #777; }
+      .comments .comments-list .media-body .comment-info .comment-rating .score {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 11px;
+        color: #777777;
+        margin: 0; }
+        .comments .comments-list .media-body .comment-info .comment-rating .score .good {
+          color: #00540a; }
+        .comments .comments-list .media-body .comment-info .comment-rating .score .bad {
+          color: #c9302c; }
+      .comments .comments-list .media-body .comment-info .comment-rating .thumbs-down {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 11px;
+        margin: 0 0 0 15px;
+        color: #777; }
+      .comments .comments-list .media-body .comment-info .comment-rating .rated a {
+        color: #23527c; }
+  @media (max-width: 767px) {
+    .comments .comments-list .media:first-child {
+      margin-top: 15px; }
+    .comments .comments-list .media-object {
+      height: 32px;
+      width: 32px; }
+    .comments .comments-list .without-image {
+      background-color: #eeeeee;
+      color: #aaaaaa;
+      font-size: 16px;
+      line-height: 32px;
+      text-align: center; }
+      .comments .comments-list .without-image:before {
+        cursor: default;
+        content: "\e008";
+        font-family: Glyphicons Halflings;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit; }
+    .comments .comments-list .media-body {
+      font-size: 13px; }
+      .comments .comments-list .media-body h4 small {
+        position: relative;
+        font-weight: 500;
+        font-size: 10px;
+        color: #777;
+        margin: 0; }
+      .comments .comments-list .media-body .media-heading {
+        font-size: 13px; }
+      .comments .comments-list .media-body .comment-info {
+        margin: 5px 0 0 0; }
+        .comments .comments-list .media-body .comment-info .comment-reply {
+          display: inline-block;
+          margin: 0 10px 0 0;
+          font-size: 12px; }
+        .comments .comments-list .media-body .comment-info .comment-rating {
+          display: inline-block; }
+          .comments .comments-list .media-body .comment-info .comment-rating .thumbs-up {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 11px;
+            margin: 0 0 0 15px;
+            color: #777; }
+          .comments .comments-list .media-body .comment-info .comment-rating .score {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 11px;
+            color: #777;
+            margin: 0; }
+          .comments .comments-list .media-body .comment-info .comment-rating .thumbs-down {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 11px;
+            margin: 0 0 0 15px;
+            color: #777; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .comments .comments-list .media:first-child {
+      margin-top: 15px; }
+    .comments .comments-list .media-object {
+      height: 48px;
+      width: 48px; }
+    .comments .comments-list .without-image {
+      background-color: #eeeeee;
+      color: #aaaaaa;
+      font-size: 20px;
+      line-height: 48px;
+      text-align: center; }
+      .comments .comments-list .without-image:before {
+        cursor: default;
+        content: "\e008";
+        font-family: Glyphicons Halflings;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit; }
+    .comments .comments-list .media-body {
+      font-size: 14px; }
+      .comments .comments-list .media-body h4 small {
+        position: relative;
+        font-weight: 500;
+        font-size: 11px;
+        color: #777;
+        margin: 0; }
+      .comments .comments-list .media-body .media-heading {
+        font-size: 14px; }
+      .comments .comments-list .media-body .comment-info {
+        margin: 5px 0 0 0; }
+        .comments .comments-list .media-body .comment-info .comment-reply {
+          display: inline-block;
+          margin: 0 10px 0 0;
+          font-size: 12px; }
+        .comments .comments-list .media-body .comment-info .comment-rating {
+          display: inline-block; }
+          .comments .comments-list .media-body .comment-info .comment-rating .thumbs-up {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 12px;
+            margin: 0 0 0 15px;
+            color: #777; }
+          .comments .comments-list .media-body .comment-info .comment-rating .score {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 12px;
+            color: #777;
+            margin: 0; }
+          .comments .comments-list .media-body .comment-info .comment-rating .thumbs-down {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 12px;
+            margin: 0 0 0 15px;
+            color: #777; } }
+
+/*# sourceMappingURL=comments.css.map */

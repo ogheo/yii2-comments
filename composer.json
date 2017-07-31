@@ -1,0 +1,31 @@
+{
+  "name": "ogheo/yii2-comments",
+  "description": "Comments module for Yii2",
+  "keywords": [
+    "yii2",
+    "yii2-comments",
+    "yii2-comments-module",
+    "yii2-comments-manager"
+  ],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/ogheo/yii2-comments",
+  "authors": [
+    {
+      "name": "Oleg Gheorghita",
+      "email": "oleg.gheo@gmail.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "*",
+    "yiisoft/yii2-bootstrap": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "ogheo\\comments\\": "src"
+    }
+  },
+  "extra": {
+    "bootstrap": "ogheo\\comments\\Bootstrap"
+  }
+}
