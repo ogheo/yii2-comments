@@ -44,7 +44,7 @@ All available options can be viewed in Comments module file.
 
 Add one of the following examples to the view file.
 
-###Basic example
+### Basic example
 
 Model is not mandatory, comments will be associated to the current url.
 
@@ -54,7 +54,7 @@ use ogheo\comments\widget\Comments;
 echo Comments::widget();
 ```
 
-###Advanced example
+### Advanced example
 
 To change default settings, you can do as follows:
 
