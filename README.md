@@ -1,4 +1,4 @@
-# yii2-comments [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE) [![Scrutinizer](https://img.shields.io/scrutinizer/g/ogheo/yii2-comments.svg?style=flat-square)](https://scrutinizer-ci.com/b/ogheo/yii2-comments/)
+# yii2-comments [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE) [![Scrutinizer](https://img.shields.io/scrutinizer/g/ogheo/yii2-comments.svg?style=flat-square)](https://scrutinizer-ci.com/g/ogheo/yii2-comments/)
 
 Comments module for Yii2.
 
