@@ -221,7 +221,8 @@ class Comments extends \yii\base\Widget
                 'model_key' => $this->model_key,
                 'email' => Yii::$app->user->isGuest ? CommentsHelper::getEmail() : null,
                 'username' => Yii::$app->user->isGuest ? CommentsHelper::getUsername() : null,
-                'scenario' => Yii::$app->user->isGuest ? $commentClass::SCENARIO_GUEST : $commentClass::SCENARIO_USER
+                'scenario' => Yii::$app->user->isGuest ? $commentClass::SCENARIO_GUEST : $commentClass::SCENARIO_USER,
+                'created_by' => Yii::$app->user->isGuest ? null : Yii::$app->user->getId()
             ]]),
             'widget' => $this
         ]);
