@@ -9,7 +9,7 @@
   ],
   "type": "yii2-extension",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/ogheo/yii2-comments",
+  "homepage": "https://github.com/ogheo/yii2-comments",
   "authors": [
     {
       "name": "Oleg Gheorghita",
